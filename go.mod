@@ -4,6 +4,7 @@ go 1.14
 
 require (
 	github.com/astaxie/beego v1.12.3
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/gin-gonic/gin v1.7.4
 	github.com/go-ini/ini v1.63.0
 	github.com/go-playground/validator/v10 v10.9.0 // indirect
@@ -30,4 +31,5 @@ replace (
 	github.com/aklian/go-gin-example/pkg/e => /root/go/src/go-gin-example/pkg/e
 	github.com/aklian/go-gin-example/pkg/setting => /root/go/src/go-gin-example/pkg/setting
 	github.com/aklian/go-gin-example/routers => /root/go/src/go-gin-example/routers
+	github.com/aklian/go-gin-example/routers/api => /root/go/src/go-gin-example/routers/api
 )
