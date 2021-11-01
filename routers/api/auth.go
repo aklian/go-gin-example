@@ -1,11 +1,11 @@
 package api
 
 import (
-	"log"
 	"net/http"
 
 	"github.com/aklian/go-gin-example/models"
 	"github.com/aklian/go-gin-example/pkg/e"
+	"github.com/aklian/go-gin-example/pkg/logging"
 	"github.com/aklian/go-gin-example/pkg/util"
 	"github.com/astaxie/beego/validation"
 	"github.com/gin-gonic/gin"
@@ -41,7 +41,7 @@ func GetAuth(c *gin.Context) {
 		}
 	} else {
 		for _, err := range valid.Errors {
-			log.Println(err.Key, err.Message)
+			logging.Info(err.Key, err.Message)
 		}
 	}
 
